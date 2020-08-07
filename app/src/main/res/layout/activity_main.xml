@@ -17,9 +17,10 @@
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.618"
         tools:visibility="invisible" />
 
     <TextView
@@ -63,20 +64,39 @@
         app:layout_constraintStart_toEndOf="@+id/timerTextView"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="195dp"
+        android:background="@android:color/transparent"
+        android:padding="10sp"
+        android:text="Correct"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startButton"
+        app:layout_constraintVertical_bias="0.0" />
+
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="410dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
+        android:layout_marginTop="40dp"
         app:columnCount="2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:rowCount="2"
-        tools:layout_editor_absoluteY="597dp">
+        app:layout_constraintTop_toBottomOf="@+id/sumTextView"
+        app:rowCount="2">
 
         <Button
             android:id="@+id/button0"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="120dp"
             android:background="@android:color/holo_green_light"
             android:onClick="chooseAnswer"
             android:tag="0"
@@ -106,7 +126,7 @@
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="121dp"
             android:background="@android:color/holo_orange_light"
             android:onClick="chooseAnswer"
             android:tag="2"
